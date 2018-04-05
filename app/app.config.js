@@ -17,8 +17,10 @@
 //     }
 //   ]);
 
-  angular.module('phonecatApp').config(($stateProvider) => {
+angularApp.config(($stateProvider, $urlRouterProvider) => {
+      $urlRouterProvider.otherwise('/phones');
       $stateProvider.state({ name: 'phonesList', url: '/phones', template: '<phone-list></phone-list>'});
       $stateProvider.state({ name: 'phoneDetail', url: '/phones/:phoneId', template: '<phone-detail></phone-detail>'});
+      $stateProvider.state({ name: 'phoneBuy', url: '/phoneBuy/:phoneId', template: '<phone-buy></phone-buy>'});
 
   })

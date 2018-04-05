@@ -1,13 +1,16 @@
-body {
-  padding: 20px;
-}
+body {}
 
 h1 {
   border-bottom: 1px solid gray;
   margin-top: 0;
 }
 
+.view-container {
+  padding: 20px;
+}
+
 /* View: Phone list */
+
 .phones {
   list-style: none;
 }
@@ -27,6 +30,7 @@ h1 {
 }
 
 /* View: Phone detail */
+
 .phone {
   background-color: white;
   display: none;
@@ -81,13 +85,63 @@ h1 {
   font-weight: bold;
 }
 
-.specs > li {
+.specs>li {
   display: inline-block;
   vertical-align: top;
   width: 200px;
 }
 
-.specs > li > span {
+.specs>li>span {
   font-size: 1.2em;
   font-weight: bold;
+}
+
+[nav-bar] {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-header {
+  flex: 1;
+}
+
+.navigation {}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+.buy-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 45px;
+}
+
+.phone-select {
+  border: none;
+  background-color: gainsboro;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+button {
+  border-radius: 3px;
+  margin: 2px;
+  background-color: slategray;
 }

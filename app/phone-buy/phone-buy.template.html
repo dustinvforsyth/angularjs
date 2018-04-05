@@ -1,0 +1,15 @@
+<div>
+    <div class="buy-container">
+        <div class="flex1 flex-row">
+            <div style="padding: 10px;">Select A Phone to Purchase:</div>
+            <select class="phone-select" ng-model="$ctrl.selectedPhoneId" ng-change="$ctrl.selectedPhone()">
+                <option ng-repeat="phone in $ctrl.phones" ng-value="phone.id" ng-selected="phone.id == $ctrl.selectedPhoneId">
+                    {{phone.name}}
+                </option>
+            </select>
+        </div>
+        <button ng-click="$ctrl.addToCart()">Add to Cart</button>
+        <button ng-click="$ctrl.buyNow()">Buy Now</button>
+    </div>
+    <phone-detail></phone-detail>
+</div>
